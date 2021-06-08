@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+
+
+    <title>Blog uploading</title>
+    <style>
+    /* Split the screen in half */
+    .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    
+    /* Control the left side */
+    .left {
+      left: 0;
+      background-color: rgb(249, 250, 252);
+    }
+    
+    /* Control the right side */
+    .right {
+      right: 0;
+      background-color: rgb(6, 49, 105);
+    }
+    
+    /* If you want the content centered horizontally and vertically */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    /* Style the image inside the centered container, if needed */
+    .centered img {
+      width: 760px;
+      height:715px;
+     
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: url(https://picsum.photos/2500/1500?image=1041);
+      background-size: cover;
+      font-family: sans-serif;
+    }
+    
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 25rem;
+      padding: 2.5rem;
+      /*border-bottom: 0.065rem solid #fff;
+      outline: none;*/
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 0.625rem;
+    }
+    
+    .box h2 {
+      margin: 0 0 1.875rem;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .box .inputBox {
+      position: relative;
+    }
+    /*border-bottom: 0.065rem solid #fff;
+      outline: none;*/
+    .box .inputBox input {
+      width: 100%;
+      padding: 0.625rem 0;
+      font-size: 1rem;
+      color: #fff;
+      letter-spacing: 0.062rem;
+      margin-bottom: 1.875rem;
+      border: none;
+      border-bottom: 0.065rem solid #fff;
+      outline: none;
+      background: transparent;
+    }
+    /*border-bottom: 0.065rem solid #fff;
+      outline: none;*/
+    .box .inputBox label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0.625rem 0;
+      font-size: 1rem;
+      color: #fff;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+    /*border-bottom: 0.065rem solid #fff;
+      outline: none;*/
+    .box .inputBox input:focus ~ label,
+    .box .inputBox input:valid ~ label,
+    .box .inputBox input:not([value=""]) ~ label {
+      top: -1.125rem;
+      left: 0;
+      color: #03a9f4;
+      font-size: 0.75rem;
+    }
+    
+    .box input[type="submit"] {
+      border: none;
+      outline: none;
+      color: #fff;
+      background-color: #03a9f4;
+      padding: 0.625rem 1.25rem;
+      cursor: pointer;
+      border-radius: 0.312rem;
+      font-size: 1rem;
+    }
+    /*border-bottom: 0.065rem solid #fff;
+      outline: none;*/
+    .box input[type="submit"]:hover {
+      background-color: #1cb1f5;
+    }
+    
+    
+    a:link {
+      color: rgb(82, 187, 248);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: rgb(209, 174, 226);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: rgb(250, 246, 246);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+</head>
+ 
+<body >
+
+
+
+    <div class="split left">
+        <div class="centered">
+          <img src="https://image.freepik.com/free-vector/mobile-application-development-programming-languages-css-html-it-ui-male-programmer-cartoon-character-developing-website-coding_335657-2367.jpg" alt="Avatar woman">
+         
+        </div>
+      </div>
+      
+      <div class="split right">
+        <div class="centered">
+            <div class="box">
+                <h2>Blog upload </h2>
+                <form action="/uploadblog" method="POST" enctype="multipart/form-data">
+                    <div class="inputBox">
+                        <input type="username" name="username" required value=""
+                               >
+                        <label>Username</label>
+                         <!--<div class="input">
+                          <div class="title"> USERNAME</div>
+                          <input class="text" type="text" placeholder=""/>
+                        </div>-->
+                      </div>
+                  <div class="inputBox">
+                    <input type="email" name="email" required value=""
+                           >
+                    <label>E-mail</label>
+                     <!--<div class="input">
+                      <div class="title"> USERNAME</div>
+                      <input class="text" type="text" placeholder=""/>
+                    </div>-->
+                  </div>
+                  <div class="inputBox">
+                    <input type="name" name="name" required value=""
+                           >
+                    <label>Blog Title</label>
+                     <!--<div class="input">
+                      <div class="title"> USERNAME</div>
+                      <input class="text" type="text" placeholder=""/>
+                    </div>-->
+                  </div>
+                  <div class="inputBox">
+                    <input type="desc" name="desc" required value=""
+                           >
+                    <label>Blog description</label>
+                     <!--<div class="input">
+                      <div class="title"> USERNAME</div>
+                      <input class="text" type="text" placeholder=""/>
+                    </div>-->
+                  </div>
+                  <div class="inputBox">
+                    <input type="category" name="category" required value=""
+                           >
+                    <label>Blog Category</label>
+                     <!--<div class="input">
+                      <div class="title"> USERNAME</div>
+                      <input class="text" type="text" placeholder=""/>
+                    </div>-->
+                  </div>
+                  <div class="inputBox">
+                 
+                  <input type="file" id="image"
+                         name="image" required value="" >
+                         <label for="image"></label>
+                        </div>
+                  <input type="submit"  value="add new blog">
+                </form>
+         </br>
+        <p style="color:rgb(255, 254, 254);"> Don't have an account? <a href=""> Register here </a></p>
+               </div>
+        </div>
+      </div>
+
+
+
+   
+</body>
+ 
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: aquamarine;
+}
+
+#abc{
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: justify;
+}
+
+#order-amt{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+#oid{
+    color: rgba(0, 0, 0, 0.664);
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: 25px; 
+    margin-left: 50px;
+}
+#rzp-text{
+    color: lightslategrey;
+    margin-left: 50px;
+}
+#verify-button1{
+    border-radius: 4px;
+    margin-left: 50px;
+
+}
+#gback{
+    border-radius: 4px;
+    margin-left: 50px;
+}
+#rzp-button1{
+    margin-left: 50px;
+}
+#order-id{
+    margin-left: 50px;
+}
+#order-pay-id{
+    margin-left: 50px;
+}
+#order-sig{
+    margin-left: 50px;
+}

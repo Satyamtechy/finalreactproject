@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+}
+
+.imgcourse {
+  height: 140px;
+  width: 175px;
+}
+
+body {
+  background: gray;
+}
+body h1 {
+  text-align: center;
+}
+button {
+  margin-left: 90%;
+  margin-bottom: 10px;
+  background-color: rgb(197, 197, 68);
+  padding: 2px 20px 2px 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.products_header {
+  padding: 2px 5px 2px 5px;
+}
+.product_title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.product {
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+  display: flex;
+  text-decoration: none;
+  font-size: 30px;
+}
+.textcourse {
+  margin-left: 1200px;
+  margin-top: 9px;
+}
